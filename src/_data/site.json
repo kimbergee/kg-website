@@ -1,0 +1,91 @@
+{
+  "title": "Kimber",
+  "logo": "img/kglogo.png",
+  "navItems": [
+    {
+        "name": "Home",
+        "url": "/",
+        "external": false
+    },
+    {
+        "name": "Github",
+        "url": "https://github.com/kimbergee",
+        "external": true
+    },
+    {
+        "name": "Work",
+        "url": "/work",
+        "external": false
+    }
+  ],
+  "hero": {
+    "heading": "Kimber Gee!",
+    "subheading": "I'm a front-end developer with a UI focus."
+  },
+  "experience": {
+    "heading": "Skills and Experience",
+    "skillList": [
+      {
+        "name": "HTML5"
+      },
+      {
+        "name": "CSS3 & SCSS"
+      },
+      {
+        "name": "Javascript & ES6"
+      },
+      {
+        "name": "React"
+      },
+      {
+        "name": "Next.js"
+      },
+      {
+        "name": "Jest unit testing"
+      },
+      {
+        "name": "Gulp & Grunt"
+      },
+      {
+        "name": "Node"
+      },
+      {
+        "name": "Git"
+      },
+      {
+        "name": "Ruby | RoR"
+      },
+      {
+        "name": "Contentful"
+      },
+      {
+        "name": "Optimizely & Monetate"
+      },
+      {
+        "name": "Atlassian Tools"
+      },
+      {
+        "name": "Agile Scrum"
+      }
+    ],
+    "portfolioList": [
+      {
+        "name": "Bluehost",
+        "description": "Things I did at Bluehost"
+      },
+      {
+        "name": "Domain.com",
+        "description": "Things I did at Domain.com"
+      },
+      {
+        "name": "Story time",
+        "description": "Things I did at story time"
+      }
+    ]
+  },
+  "about": {
+    "heading": "About",
+    "subheading": "I'm live in the Boston area and am currently working full time, but am open to new work. Here's my resume and email.",
+    "other": "Oh and these are my two dogs, Arnold & Luna :)"
+  }
+}

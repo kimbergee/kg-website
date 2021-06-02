@@ -1,0 +1,368 @@
+.about {
+  background-color: var(--about-bg-color);
+  text-align: center;
+  position: relative;
+
+  &::after {
+    content: '';
+    background-color: var(--about-bg-color);
+    display: block;
+    width: 100%;
+    height: 25%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    z-index: 0;
+    transform: skewY(3deg);
+    transform-origin: top right;
+  }
+
+  .text-content {
+    max-width: 100rem;
+    margin: 0 auto
+  }
+
+  .dogs {
+    display: flex;
+    justify-content: center;
+
+    .arnie, .luna {
+      width: 20rem;
+      height: 25rem;
+      position: relative;
+      border-radius: 50%;
+      margin: 0 5rem;
+    }
+
+    .head {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    .nose {
+      width: 1.5rem;
+      height: 1.5rem;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+
+    .eyebrow {
+      width: 1rem;
+      border-radius: 40%;
+      position: absolute;
+      top: 14%;
+    }
+
+    .eyebrow-right,
+    .eye-right {
+      right: 20%;
+    }
+
+    .eyebrow-left,
+    .eye-left {
+      left: 20%;
+    }
+    
+    .body {
+      width: 12rem;
+      height: 14rem;
+      position: absolute;
+      left: 50%;
+      top: calc(50% + 5rem);
+      transform: translate(-50%, -50%);
+      clip-path: polygon(29% 0, 71% 0, 100% 100%, 0% 100%);
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      z-index: 1;
+    }
+    
+    .leg {
+      height: 8rem;
+      width: 2.5rem;
+      position: absolute;
+      bottom: 0;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 3.2rem;
+        height: 1.6rem;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+    }
+    
+    .leg-left {
+      left: 28%;
+      border-top-left-radius: 10px;
+    }
+    
+    .leg-right {
+      right: 28%;
+      border-top-right-radius: 10px;
+    }
+
+    .tail {
+      width: 4rem;
+      height: 1rem;
+      position: absolute;
+      bottom: 1rem;
+      left: calc(50% + 6.5rem);
+      transform: translateX(-50%);
+      clip-path: polygon(0 0, 100% 30%, 100% 50%, 0% 100%);
+      transform-origin: left;
+    }
+    
+    @keyframes wag {
+      50% {
+        transform: rotate(-10deg) translate(-1rem, -1rem);
+      }
+    }
+  }
+  
+  .arnie {
+    .head {
+      width: 6rem;
+      height: 6.5rem;
+      background: #fff;
+    }
+    
+    .patches {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .patch-left {
+      width: 1.5rem;
+      height: 3.3rem;
+      background: #dd911d;
+      border-bottom-right-radius: 20px;
+      border-top-right-radius: 5px;
+    }
+    
+    .patch-right {
+      width: 1.5rem;
+      height: 3.3rem;
+      background: #dd911d;
+      border-bottom-left-radius: 20px;
+      border-top-left-radius: 5px;
+    }
+    
+    .nose {
+      background: #252525;
+    }
+    
+    .eye {
+      width: 1rem;
+      height: 1.2rem;
+      background: white;
+      border-radius: 50%;
+      position: absolute;
+      top: 30%;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background: #a35709;
+        width: 0.7rem;
+        height: 0.7rem;
+        border-radius: 50%;
+        right: 0.1rem;
+        top: 0.2rem;
+      }
+    }
+        
+    .eyebrow {
+      height: 0.5rem;
+      background: #efd6ba;
+    }
+    
+    .tongue {
+      height: 1.5rem;
+      width: 1.7rem;
+      background: pink;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+    }
+    
+    .ear {
+      width: 2.5rem;
+      height: 4.5rem;
+      background: #c77902;
+      position: absolute;
+    }
+    
+    .ear-left {
+      right: 100%;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    
+    .ear-right {
+      left: 100%;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+    
+    .body {
+      background: #c77902;
+    }
+    
+    .leg {
+      background: #fffaf5;
+
+      &::after {
+        background: #efd6ba;
+      }
+    }
+    
+    .tail {
+      background: #c77902;
+      animation: wag 1.5s linear infinite;
+    }
+  }
+  
+  .luna {
+    .head {
+      width: 5rem;
+      height: 6.5rem;
+      background: #262626;
+    }
+    
+    .nose {
+      background: #000;
+    }
+    
+    .eye {
+      width: 1rem;
+      height: 1.2rem;
+      background: white;
+      border-radius: 50%;
+      position: absolute;
+      top: 30%;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background: #a35709;
+        width: .55rem;
+        height: .75rem;
+        border-radius: 50%;
+        right: 0.5rem;
+        top: 0.2rem;
+      }
+    }
+    
+    .eyebrow {
+      height: 0.25rem;
+      background: #999999;
+    }
+    
+    .ear {
+      width: 1.5rem;
+      height: 4.5rem;
+      background: #262626;
+      position: absolute;
+    }
+    
+    .ear-left {
+      right: 100%;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 50px;
+    }
+    
+    .ear-right {
+      left: 100%;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 50px;
+    }
+    
+    .body {
+      background: #262626;
+    }
+    
+    .leg {
+      background: #323232;
+
+      &::after {
+        background: #4c4c4c;
+      }
+    }
+    
+    .tail {
+      background: #262626;
+      animation: wag .5s linear infinite;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .arnie, .luna {
+      transform: scale(0.8);
+    }
+  }  
+}
+
+@media (min-width: 992px) {
+  .about {
+    .dogs {
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+      }
+
+      .arnie, .luna {
+        &::after {
+          display: block;
+          position: relative;
+          bottom: -2rem;
+          color: var(--text-color);
+          font-family: 'Hachi Maru Pop', cursive;
+          font-size: 1.4rem;
+          font-weight: 700;
+          opacity: 0;
+          animation-play-state: paused;
+          margin: 1rem auto;
+          width: 15ch;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+    
+        &:hover::after {
+          animation: typing 2s steps(15);
+          animation-play-state: running;
+          opacity: 1;
+        }
+      }
+      
+      .arnie {
+        &::after {
+          content: "arff! i'm arnie!";
+        }
+      }
+
+      .luna {
+        &::after {
+          content: "woof! i'm luna!";
+        }
+      }
+    }
+  }
+}

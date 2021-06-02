@@ -1,0 +1,136 @@
+.experience {
+  text-align: center;
+  background-color: var(--skills-bg-color);
+  padding: 2rem 0 4rem 0;
+
+  $colors: #ff47c2, #26dfe1, #d65068, #5ea357, #48acf0, #f9ca38, #871df6, #ff7f50, #9ba2ff, #ffadcd, #f2c4a1, #b82cdd, #92725f, #87d68d;
+  
+  ul.skills-list {
+    li {
+      font-size: 1.6rem;
+      padding: 1rem;
+      margin: .5rem;
+      border: 4px solid;
+      border-radius: 2px;
+      transition: all 0.5s ease;
+
+      @for $i from 1 through 14 {
+        &:nth-child(#{$i}) {
+          $color: nth($colors, $i);
+          border-color: $color;
+
+          &:hover {
+            box-shadow: 0 0.6em 0.6em -0.4em $color;
+            transform: translateY(-0.25em);
+          }
+        }
+      }
+    }
+  }
+
+  .portfolio {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+  }
+
+  .portfolio-item {
+    margin-bottom: 4rem;
+  }
+
+  .card {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    perspective: 150em;
+
+    &:hover,
+    .flip {
+      .card-front {
+        transform: rotateY(-180deg);
+      }
+
+      .card-back {
+        transform: rotate(0);
+      }
+    }
+  }
+
+  .card-front {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: all 1s ease;
+  }
+
+  .card-back {
+    display: flex;
+    align-items: center;
+    color: #3b252c;
+    background-color: #E8E6E8;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all 1s ease;
+  }
+}
+
+@media (min-width: 768px) {
+  .experience {
+    padding: 4rem 0 8rem 0;
+
+    .portfolio {
+      padding-top: 4rem;
+    }
+
+    .portfolio-item {
+      margin-bottom: 0;
+    }
+
+    .card {
+      width: 22rem;
+      height: 22rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .experience {
+    padding: 6rem 0 10rem 0;
+
+    ul.skills-list {
+      li {
+        padding: 2rem;
+        margin: 1rem;
+        font-size: 2rem;
+      }
+    }
+
+    .portfolio {
+      padding-top: 2rem;
+    }
+
+    .card {
+      width: 28rem;
+      height: 28rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .experience {
+    .card {
+      width: 35rem;
+      height: 35rem;
+    }
+  }
+}
