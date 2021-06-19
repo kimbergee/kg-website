@@ -1,6 +1,7 @@
 {
   "title": "Kimber",
   "logo": "img/kglogo.png",
+  "avatar": "img/kg-av-whitebg-500x500.jpg",
   "navItems": [
     {
         "name": "Home",
@@ -19,8 +20,8 @@
     }
   ],
   "hero": {
-    "heading": "Kimber Gee!",
-    "subheading": "I'm a front-end developer with a UI focus."
+    "heading": "Hello! My name is Kimber.",
+    "subheading": "I'm a front-end developer with a UI focus, currently living in the Boston area."
   },
   "experience": {
     "heading": "Skills and Experience",
@@ -85,7 +86,7 @@
   },
   "about": {
     "heading": "About",
-    "subheading": "I'm live in the Boston area and am currently working full time, but am open to new work. Here's my resume and email.",
+    "subheading": "I am currently working full time, but am open to new work. Here's my resume and email.",
     "other": "Oh and these are my two dogs, Arnold & Luna :)"
   }
 }

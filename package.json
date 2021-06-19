@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "sass --watch src/scss:public/css",
-    "build:sass": "sass src/scss:public/css",
+    "watch:sass": "sass --no-source-map --watch src/scss/base.scss:public/css/base.min.css --style compressed",
+    "build:sass": "sass --no-source-map src/scss/base.scss:public/css/base.min.css --style compressed",
+    "clean": "rimraf public",
     "watch:eleventy": "eleventy --serve",
     "build:eleventy": "eleventy",
-    "start": "npm-run-all build:sass --parallel watch:*",
-    "build": "npm-run-all build:*"
+    "start": "npm-run-all clean build:sass --parallel watch:*",
+    "build": "npm-run-all clean build:*"
   },
   "keywords": [],
   "author": "",

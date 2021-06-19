@@ -1,11 +1,13 @@
 <section class="hero">
   <div class="container">
-    <img src="{{site.logo}}" class="logo" />
+    {# <img src="{{site.logo}}" class="logo" /> #}
     <div class="text-content">
       <h1>{{ site.hero.heading }}</h1>
-      <h2 class="h1">{{site.hero.subheading}}</h2>
+      <h4>{{site.hero.subheading}}</h4>
       {{ content | safe }}
-      {# <button class="btn-12"><span>Click!</span><span>Read More</span></button> #}
+    </div>
+    <div class="avatar">
+      <img src="{{site.avatar}}" />
     </div>
   </div>
 </section>

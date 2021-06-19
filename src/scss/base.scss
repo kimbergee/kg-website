@@ -3,10 +3,6 @@
 @import './components/experience.scss';
 @import './components/about.scss';
 
-:root {
-  font-size: 62.5%;
-}
-
 /* raleway-300 - latin */
 @font-face {
   font-family: 'Raleway';
@@ -49,21 +45,52 @@
        url('../fonts/ibm-plex-mono-v6-latin-300.svg#IBMPlexMono') format('svg'); /* Legacy iOS */
 }
 
+//TODO  clean up commented
 .theme-1 {
-  --hero-bg-color: #d89ea6;
-  --skills-bg-color: #59546c;
-  // --about-bg-color: #a0bab8;
-  --about-bg-color: #a9c0bf;
+  --hero-bg-color: #b2b1ab;
+  --skills-bg-color: #63606f;
+  --about-bg-color: #e7c3a5;
   --text-color: #f6f8ff;
 }
 
 .theme-2 {
-  // --hero-bg-color: #d9dcfc;
-  --hero-bg-color:#e6e6fa;
-  --skills-bg-color: #f8afa0;
-  // --about-bg-color: #f4e2e8;
-  --about-bg-color: #d6ece7;
+  --hero-bg-color: #f9dbd5;
+  --skills-bg-color:#e6e6fa;
+  --about-bg-color: #fcfad6;
   --text-color: #3b252c;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  scrollbar-width: auto;
+  scrollbar-color: #26dfe1;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+*::-webkit-scrollbar {
+  width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f9ca38;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #26dfe1;
+  border-radius: 6px;
+  border: 0px;
 }
 
 body {
@@ -73,6 +100,7 @@ body {
   color: var(--text-color);
   transition: color 1.5s ease;
   margin: 0;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -80,8 +108,8 @@ h1, .h1 {
   font-family: 'Hachi Maru Pop', cursive;
   font-size: 2.5rem;
   font-weight: 300;
-  margin-bottom: 2rem;
-  text-transform: none;
+  margin: 1rem 0 0 0;
+  text-transform: uppercase;
 }
 
 h2, .h2 {
@@ -130,7 +158,6 @@ section {
 }
 
 .container {
-  box-sizing: border-box;
   margin: 0 auto;
   padding: 1rem;
   width: 100%;
@@ -140,13 +167,14 @@ section {
 
 @media (min-width: 768px) {
   .container {
-    padding: 2rem;
+    padding: 2rem 4rem;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
     padding: 2rem 5rem 4rem 5rem;
+    max-width: 120rem;
   }
 
   h1, .h1 {
