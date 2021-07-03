@@ -66,6 +66,10 @@
   font-size: 62.5%;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -94,6 +98,7 @@ html {
 }
 
 body {
+  overflow: auto;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1.6rem;
   font-weight: 300;
@@ -171,6 +176,16 @@ section {
   width: 100%;
   position: relative;
   z-index: 5;
+}
+
+footer {
+  background-color: var(--about-bg-color);
+  text-align: center;
+  padding: 2rem 0;
+
+  p {
+    margin: 0;
+  }
 }
 
 @media (min-width: 768px) {

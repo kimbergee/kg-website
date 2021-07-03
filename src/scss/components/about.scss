@@ -2,6 +2,7 @@
   background-color: var(--about-bg-color);
   text-align: center;
   position: relative;
+  padding: 1rem 0;
 
   &::after {
     content: '';
@@ -325,7 +326,7 @@
 }
 
 @media (min-width: 992px) {
-  .about {
+  .about {    
     .text-content {
       font-size: 2.5rem;
     }

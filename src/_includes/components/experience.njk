@@ -1,54 +1,15 @@
 <section class="experience">
   <div class="container">
-    <h2>{{site.experience.heading}}</h2>
+    <h2 data-bottom-center="opacity: 0.1" data-center="opacity: 1" data-top="opacity: 1" data-top-bottom="opacity: 0.1" class="skrollable skrollable-between">{{site.experience.heading}}</h2>
     {{ content | safe }}
     <div class="skills">
       <ul class="skills-list">
         {% for item in site.experience.skillList %}
-          <li class="skill-item">
+          <li data-bottom-top="opacity: 0.1" data-center="opacity: 1" data-top="opacity: 1" data-top-bottom="opacity: 0.1" class="skill-item skrollable skrollable-between">
             {{item.name}}
           </li>
         {% endfor %}
       </ul>
-      <h3>Recent Work (add later)</h3>
-    </div>
-    {# <div class="portfolio">
-      {% for item in site.experience.portfolioList %}
-      <div class="portfolio-item">
-        <h4>{{item.name}}</h4>
-        <div class="card">
-          <div class="card-front">
-            <svg viewBox="0 0 100 100">
-              <path d="M5.99306484,0 L94.0069352,0 C97.3168135,0 100,2.67804027 100,6.00333095 L100,16 L0,16 L0,6.00333095 C0,2.68778282 2.68768095,0 5.99306484,0 Z" fill="#E8E6E8"></path>
-              <circle fill="#FC645F" cx="10" cy="8" r="3"></circle>
-              <circle fill="#FDBD41" cx="21" cy="8" r="3"></circle>
-              <circle fill="#35CC4B" cx="32" cy="8" r="3"></circle>
-              <path d="M100,16 L100,93.9926375 C100,97.3104122 97.312319,100 94.0069352,100 L5.99306484,100 C2.68318653,100 0,97.3120937 0,93.9926375 L0,16 L100,16 Z" fill="#FFFFFF"></path>
-              <rect fill="#1a90af" x="10" y="21" width="68" height="6" rx="3"></rect>
-              <rect fill="#D7D7D7" x="10" y="37" width="24" height="2" rx="1"></rect>
-              <rect fill="#D7D7D7" x="38" y="37" width="24" height="2" rx="1"></rect>
-              <rect fill="#D7D7D7" x="66" y="37" width="24" height="2" rx="1"></rect>
-              <rect fill="#D34836" x="10" y="33" width="24" height="2" rx="1"></rect>
-              <rect fill="#D34836" x="38" y="33" width="24" height="2" rx="1"></rect>
-              <rect fill="#D34836" x="66" y="33" width="24" height="2" rx="1"></rect>
-              <rect fill="#D7D7D7" x="10" y="41" width="24" height="2" rx="1"></rect>
-              <rect fill="#D7D7D7" x="38" y="41" width="24" height="2" rx="1"></rect>
-              <rect fill="#D7D7D7" x="66" y="41" width="24" height="2" rx="1"></rect>
-              <rect fill="#1a90af" x="10" y="48" width="52" height="14" rx="3"></rect>
-              <rect fill="#1a90af" x="66" y="48" width="24" height="14" rx="3"></rect>
-              <rect fill="#D7D7D7" x="10" y="68" width="74" height="2" rx="1"></rect>
-              <rect fill="#D7D7D7" x="10" y="72" width="79" height="2" rx="1"></rect>
-              <rect fill="#D7D7D7" x="10" y="76" width="71" height="2" rx="1"></rect>
-              <rect fill="#D7D7D7" x="10" y="80" width="74" height="2" rx="1"></rect>
-              <rect fill="#D34836" x="10" y="88" width="28" height="6" rx="3"></rect>
-            </svg>
-          </div>
-          <div class="card-back">
-            <p>{{item.description}}</p>
-          </div>
-        </div>
-      </div>
-      {% endfor %} #}
     </div>
   </div>
 </section>

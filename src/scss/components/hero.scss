@@ -2,7 +2,7 @@
   text-align: center;
   background-color: var(--hero-bg-color);
   position: relative;
-  padding: 2rem 0;
+  padding: 3rem 0;
 
   &::after {
     content: '';
@@ -48,6 +48,8 @@
 
 @media (min-width: 768px) {
   .hero {
+    padding-top: 4rem;
+
     .container {
       flex-direction: row;
       align-items: center;
@@ -64,6 +66,12 @@
       text-align: left;
       padding-left: 4rem;
     }
+  }
+}
+
+@media (min-width: 992px) {
+  .hero {
+    padding-top: 6rem;
   }
 }
 

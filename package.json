@@ -6,12 +6,12 @@
   "scripts": {
     "watch:sass": "sass --no-source-map --watch src/scss/base.scss:public/css/base.min.css --style compressed",
     "build:sass": "sass --no-source-map src/scss/base.scss:public/css/base.min.css --style compressed",
-    "uglify": "mkdir -p public/js && uglifyjs src/js/main.js -m -c -o public/js/main.min.js",
+    "build:js": "mkdir -p public/js && uglifyjs src/js/main.js -m -c -o public/js/main.min.js",
     "clean": "rimraf public",
     "watch:eleventy": "eleventy --serve",
     "build:eleventy": "eleventy",
-    "start": "npm-run-all clean uglify build:sass --parallel watch:*",
-    "build": "npm-run-all clean uglify build:*"
+    "start": "npm-run-all clean --parallel build:js watch:*",
+    "build": "npm-run-all clean build:*"
   },
   "keywords": [],
   "author": "",
