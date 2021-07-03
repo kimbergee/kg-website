@@ -20,7 +20,13 @@
 
   .text-content {
     max-width: 100rem;
-    margin: 0 auto
+    margin: 0 auto;
+    font-size: 2rem;
+    font-weight: 600;
+
+    a {
+      text-decoration: underline;
+    }
   }
 
   .dogs {
@@ -320,6 +326,10 @@
 
 @media (min-width: 992px) {
   .about {
+    .text-content {
+      font-size: 2.5rem;
+    }
+
     .dogs {
       @keyframes typing {
         from {
@@ -333,13 +343,13 @@
           position: relative;
           bottom: -2rem;
           color: var(--text-color);
-          font-family: 'Hachi Maru Pop', cursive;
+          font-family: 'IBM Plex Mono', monospace;
           font-size: 1.4rem;
           font-weight: 700;
           opacity: 0;
           animation-play-state: paused;
           margin: 1rem auto;
-          width: 15ch;
+          width: 16ch;
           white-space: nowrap;
           overflow: hidden;
         }

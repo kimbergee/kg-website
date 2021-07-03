@@ -10,11 +10,12 @@
           </li>
         {% endfor %}
       </ul>
+      <h3>Recent Work (add later)</h3>
     </div>
-    <div class="portfolio">
+    {# <div class="portfolio">
       {% for item in site.experience.portfolioList %}
       <div class="portfolio-item">
-        <h3>{{item.name}}</h3>
+        <h4>{{item.name}}</h4>
         <div class="card">
           <div class="card-front">
             <svg viewBox="0 0 100 100">
@@ -43,11 +44,11 @@
             </svg>
           </div>
           <div class="card-back">
-            <h4>{{item.description}}</h4>
+            <p>{{item.description}}</p>
           </div>
         </div>
       </div>
-      {% endfor %}
+      {% endfor %} #}
     </div>
   </div>
 </section>

@@ -75,12 +75,17 @@
     border-radius: 20px;
     height: 100%;
     width: 100%;
+    padding: 0 1rem;
     position: absolute;
     top: 0;
     left: 0;
     transform: rotateY(180deg);
     backface-visibility: hidden;
     transition: all 1s ease;
+
+    p {
+      margin: 0 auto;
+    }
   }
 }
 
@@ -103,7 +108,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .experience {
     padding: 6rem 0 10rem 0;
 
@@ -117,20 +122,6 @@
 
     .portfolio {
       padding-top: 2rem;
-    }
-
-    .card {
-      width: 28rem;
-      height: 28rem;
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  .experience {
-    .card {
-      width: 35rem;
-      height: 35rem;
     }
   }
 }

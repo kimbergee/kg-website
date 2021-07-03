@@ -1,13 +1,12 @@
 <section class="hero">
   <div class="container">
-    {# <img src="{{site.logo}}" class="logo" /> #}
     <div class="text-content">
-      <h1>{{ site.hero.heading }}</h1>
-      <h4>{{site.hero.subheading}}</h4>
+      <h1>{{ site.hero.heading }}<span class="outline">{{site.hero.name}}</span></h1>
+      <h3>I'm a <span class="outline">front-end developer</span> with a <span class="outline">UI</span> focus, currently living in the Boston area.</h3>
       {{ content | safe }}
     </div>
     <div class="avatar">
-      <img src="{{site.avatar}}" />
+      <img src="{{site.avatar}}" alt="avatar illustration" />
     </div>
   </div>
 </section>
