@@ -1,7 +1,7 @@
 {
   "title": "Kimber",
   "logo": "img/kglogo.png",
-  "avatar": "img/kg-av-whitebg-500x500.jpg",
+  "avatar": "img/kg-av-trbg-500x500.png",
   "navItems": [
     {
         "name": "Home",
@@ -20,7 +20,8 @@
     }
   ],
   "hero": {
-    "heading": "Hello! My name is Kimber.",
+    "heading": "Hello! My name is ",
+    "name": "Kimber Gee.",
     "subheading": "I'm a front-end developer with a UI focus, currently living in the Boston area."
   },
   "experience": {
@@ -71,22 +72,22 @@
     ],
     "portfolioList": [
       {
-        "name": "Bluehost",
-        "description": "Things I did at Bluehost"
+        "name": "Bluehost.com",
+        "description": "Built with react and next.js. Worked on multiple site-wide redesigns, platform migrations, and building reusable components"
       },
       {
         "name": "Domain.com",
-        "description": "Things I did at Domain.com"
+        "description": "Helped with site redesign and training/onboarding of new devs for site maintenace."
       },
       {
         "name": "Story time",
-        "description": "Things I did at story time"
+        "description": "An in-house simple react app for sprint story pointing, with separate scrum master and voter controls."
       }
     ]
   },
   "about": {
     "heading": "About",
-    "subheading": "I am currently working full time, but am open to new work. Here's my resume and email.",
-    "other": "Oh and these are my two dogs, Arnold & Luna :)"
-  }
+    "other": "Oh, and these are my two dogs, Arnold & Luna :)"
+  },
+  "footer": "Kimber Gee © 2021"
 }

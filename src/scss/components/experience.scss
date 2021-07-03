@@ -1,7 +1,7 @@
 .experience {
   text-align: center;
   background-color: var(--skills-bg-color);
-  padding: 2rem 0 4rem 0;
+  padding: 3rem 0;
 
   $colors: #ff47c2, #26dfe1, #d65068, #5ea357, #48acf0, #f9ca38, #871df6, #ff7f50, #9ba2ff, #ffadcd, #f2c4a1, #b82cdd, #92725f, #87d68d;
   
@@ -75,18 +75,23 @@
     border-radius: 20px;
     height: 100%;
     width: 100%;
+    padding: 0 1rem;
     position: absolute;
     top: 0;
     left: 0;
     transform: rotateY(180deg);
     backface-visibility: hidden;
     transition: all 1s ease;
+
+    p {
+      margin: 0 auto;
+    }
   }
 }
 
 @media (min-width: 768px) {
   .experience {
-    padding: 4rem 0 8rem 0;
+    padding: 4rem 0;
 
     .portfolio {
       padding-top: 4rem;
@@ -103,9 +108,9 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .experience {
-    padding: 6rem 0 10rem 0;
+    padding: 6rem 0;
 
     ul.skills-list {
       li {
@@ -117,20 +122,6 @@
 
     .portfolio {
       padding-top: 2rem;
-    }
-
-    .card {
-      width: 28rem;
-      height: 28rem;
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  .experience {
-    .card {
-      width: 35rem;
-      height: 35rem;
     }
   }
 }

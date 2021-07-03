@@ -17,20 +17,6 @@
        url('../fonts/raleway-v19-latin-300.svg#Raleway') format('svg'); /* Legacy iOS */
 }
 
-/* hachi-maru-pop-regular - latin */
-@font-face {
-  font-family: 'Hachi Maru Pop';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/hachi-maru-pop-v6-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/hachi-maru-pop-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/hachi-maru-pop-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/hachi-maru-pop-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/hachi-maru-pop-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/hachi-maru-pop-v6-latin-regular.svg#HachiMaruPop') format('svg'); /* Legacy iOS */
-}
-
 /* ibm-plex-mono-300 - latin */
 @font-face {
   font-family: 'IBM Plex Mono';
@@ -45,12 +31,27 @@
        url('../fonts/ibm-plex-mono-v6-latin-300.svg#IBMPlexMono') format('svg'); /* Legacy iOS */
 }
 
+/* dela-gothic-one-regular - latin */
+@font-face {
+  font-family: 'Dela Gothic One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/dela-gothic-one-v4-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/dela-gothic-one-v4-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/dela-gothic-one-v4-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/dela-gothic-one-v4-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/dela-gothic-one-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/dela-gothic-one-v4-latin-regular.svg#DelaGothicOne') format('svg'); /* Legacy iOS */
+}
+
 //TODO  clean up commented
 .theme-1 {
   --hero-bg-color: #b2b1ab;
   --skills-bg-color: #63606f;
   --about-bg-color: #e7c3a5;
   --text-color: #f6f8ff;
+  transition: all 1s ease-in;
 }
 
 .theme-2 {
@@ -58,10 +59,15 @@
   --skills-bg-color:#e6e6fa;
   --about-bg-color: #fcfad6;
   --text-color: #3b252c;
+  transition: all 1s ease-in;
 }
 
 :root {
   font-size: 62.5%;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 html {
@@ -70,8 +76,6 @@ html {
 
 * {
   box-sizing: inherit;
-  scrollbar-width: auto;
-  scrollbar-color: #26dfe1;
 
   &::before,
   &::after {
@@ -84,54 +88,63 @@ html {
 }
 
 *::-webkit-scrollbar-track {
-  background: #f9ca38;
+  background: #f6f8ff;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #26dfe1;
+  background-color: #90626d;
   border-radius: 6px;
   border: 0px;
 }
 
 body {
+  overflow: auto;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1.6rem;
   font-weight: 300;
   color: var(--text-color);
-  transition: color 1.5s ease;
+  transition: color 1s ease;
   margin: 0;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, .h1 {
-  font-family: 'Hachi Maru Pop', cursive;
-  font-size: 2.5rem;
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 3rem;
   font-weight: 300;
   margin: 1rem 0 0 0;
-  text-transform: uppercase;
+  line-height: 4rem;
+}
+
+.outline {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.25px;
+  -webkit-text-stroke-color: var(--text-color);
+  transition: all 1s ease-in;
 }
 
 h2, .h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Dela Gothic One', cursive;
   font-size: 3rem;
+  line-height: 4rem;
   font-weight: 300;
-  text-transform: uppercase;
 }
 
 h3, .h3 {
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  text-transform: none;
+}
+
+h4, .h4 {
   font-family: 'Raleway', sans-serif;
   font-size: 2rem;
   font-weight: 300;
   text-transform: uppercase;
   margin: 0 0 2rem 0;
-}
-
-h4, .h4 {
-  font-family: 'Hachi Maru Pop', cursive;
-  font-size: 2rem;
-  font-weight: 300;
-  text-transform: none;
 }
 
 a {
@@ -150,10 +163,10 @@ ul {
 }
 
 section {
-  transition: background-color 1.5s ease;
+  transition: background-color 1s ease;
 
   &::after {
-    transition: background-color 1.5s ease;
+    transition: background-color 1s ease;
   }
 }
 
@@ -165,31 +178,44 @@ section {
   z-index: 5;
 }
 
+footer {
+  background-color: var(--about-bg-color);
+  text-align: center;
+  padding: 2rem 0;
+
+  p {
+    margin: 0;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     padding: 2rem 4rem;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .container {
     padding: 2rem 5rem 4rem 5rem;
     max-width: 120rem;
   }
 
   h1, .h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
+    line-height: 5rem;
   }
 
   h2, .h2 {
-    font-size: 5rem;
+    font-size: 4rem;
+    line-height: 5rem;
   }
 
   h3, .h3 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
   }
 
   h4, .h4 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }

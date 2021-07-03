@@ -11,11 +11,13 @@
     <meta name="theme-color" content="#ffffff" />
     <title>{{ title }}</title>
   </head>
-  <body class="theme-1">
+  <body class="theme-1" id="skrollr-body">
     {% include "./components/header.njk" %}
     {% include "./components/hero.njk" %}
     {% include "./components/experience.njk" %}
     {% include "./components/about.njk" %}
-    <script defer src="js/main.js"></script>
+    {% include "./components/footer.njk" %}
+    <script defer src="js/main.min.js"></script>
+    <script defer src="js/skrollr.min.js"></script>
   </body>
 </html>
