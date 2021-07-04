@@ -1,4 +1,4 @@
 ---
-title: "Kimber Gee's site"
+title: "Kimber Gee"
 layout: "base.njk"
 ---
