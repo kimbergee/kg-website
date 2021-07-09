@@ -2,10 +2,10 @@
   <div class="container">
     <h2 data-bottom-center="opacity: 0.1" data-center="opacity: 1" data-top="opacity: 1" data-top-bottom="opacity: 0.1" class="skrollable skrollable-between">{{site.experience.heading}}</h2>
     {{ content | safe }}
-    <div class="skills">
+    <div data-bottom-top="opacity: 0.1" data-center="opacity: 1" data-top="opacity: 1" data-top-bottom="opacity: 0.1" class="skills skrollable skrollable-between">
       <ul class="skills-list">
         {% for item in site.experience.skillList %}
-          <li data-bottom-top="opacity: 0.1" data-center="opacity: 1" data-top="opacity: 1" data-top-bottom="opacity: 0.1" class="skill-item skrollable skrollable-between">
+          <li class="skill-item">
             {{item.name}}
           </li>
         {% endfor %}

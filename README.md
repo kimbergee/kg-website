@@ -1,12 +1,17 @@
 ## 2021 personal site built with 11ty ✌️
-### dev installation
+
+#### [kimbergee.dev](https://www.kimbergee.dev/)
+<br />
+
+### dev installation and start up locally
 
 ```bash
 $ git clone https://github.com/kimbergee/kg-website.git
 $ cd kg-website
 $ npm i
-`npm run start` to get running locally
+$ npm run start
 ```
+<br />
 
 ### deployed with netlify 
 
