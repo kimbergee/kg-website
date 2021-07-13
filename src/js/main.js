@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function (event) {
+window.onload = (event) => {
   skrollr.init({
     forceHeight: false,
-    mobileCheck: function () {
+    mobileCheck: () => {
       return false;
     }
   });
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   if (windowWidth <= 768 && theSkrollr !== undefined) {
     theSkrollr.destroy();
   }
-});
+}
 
 (function () {
   const checkbox = document.querySelector('input[name=doggo]');
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.body.classList.toggle('theme-2');
   }
 
-  checkbox.addEventListener('change', function () {
+  checkbox.addEventListener('change', () => {
     toggleColors();
   });
 })();
