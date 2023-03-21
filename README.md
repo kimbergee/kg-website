@@ -1,4 +1,4 @@
-## 2021 personal site built with 11ty ✌️
+## 2023 personal site built with 11ty ✌️
 
 #### [kimbergee.dev](https://www.kimbergee.dev/)
 <br />
