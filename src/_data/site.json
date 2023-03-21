@@ -37,37 +37,37 @@
         "name": "Javascript & ES6"
       },
       {
-        "name": "React"
+        "name": "React (+ some redux)"
       },
       {
         "name": "Next.js"
       },
       {
-        "name": "Jest unit testing"
+        "name": "Jest | Mocha | Cypress"
       },
       {
-        "name": "Gulp & Grunt"
+        "name": "Webpack & Gulp"
       },
       {
-        "name": "Node"
+        "name": "Node.js"
       },
       {
         "name": "Git"
       },
       {
-        "name": "Ruby | RoR"
+        "name": "Invision | Figma"
       },
       {
         "name": "Contentful"
       },
       {
-        "name": "Optimizely & Monetate"
+        "name": "Optimizely & Adobe Target"
       },
       {
         "name": "Atlassian Tools"
       },
       {
-        "name": "Agile Scrum"
+        "name": "Datadog"
       }
     ],
     "portfolioList": [
@@ -89,5 +89,5 @@
     "heading": "About",
     "other": "Oh, and these are my two dogs, Arnold & Luna :)"
   },
-  "footer": "Kimber Gee © 2021"
+  "footer": "Kimber Gee © 2023"
 }
